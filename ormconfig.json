@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "172.19.0.4",
+  "port": 5432,
+  "username": "admin_postgres",
+  "password": "admin_password",
+  "database": "db_nlw6",
+  "migrations": ["src/database/migrations/*.ts"],
+  "entities": ["src/entities/*.ts"],
+  "cli": {
+    "migrationsDir": "src/database/migrations",
+    "entitiesDir": "src/entities"
+  }
+}

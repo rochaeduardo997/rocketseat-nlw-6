@@ -1,18 +1,15 @@
+import "reflect-metadata";
 import express from "express";
+
+import { router } from "./routes";
+
+import "./database";
 
 const app = express();
 
-app.get("/", (req, res) => {
-  return res.status(200).json({
-    status: true
-  });
-});
+app.use(express.json());
 
-app.post("/", (req, res) => {
-  return res.status(200).json({
-    status: true
-  });
-});
+app.use(router);
 
 app.listen(3000, () => {
   console.log("Server is running NLW");
