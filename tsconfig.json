@@ -4,6 +4,8 @@
     "target": "es5",
     "module": "commonjs",
     
+    "typeRoots": ["./src/@types"],
+
     "strict": true,
     "esModuleInterop": true,
     
